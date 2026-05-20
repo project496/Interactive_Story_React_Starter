@@ -1,0 +1,126 @@
+{
+  "scenes": [
+    {
+      "id": "scene1",
+      "text": "You wake up in a dark forest. Fog surrounds you. Two paths lie ahead.",
+      "image": "/assets/images/forest.jpg",
+      "music": "/assets/audio/forest.mp3",
+      "choices": [
+        { "text": "Take the left path (To River)", "next": "scene2a" },
+        { "text": "Take the right path (To Darkness)", "next": "scene2b" }
+      ]
+    },
+    {
+      "id": "scene2a",
+      "text": "You reach a fast-flowing river. The water looks deep and cold.",
+      "image": "/assets/images/river.jpg",
+      "music": "/assets/audio/river flow.wav",
+      "choices": [
+        { "text": "Try to swim across (Dangerous)", "next": "scene3a" },
+        { "text": "Follow the river path", "next": "scene3b" }
+      ]
+    },
+    {
+      "id": "scene2b",
+      "text": "The forest grows darker. You hear heavy footsteps behind you. Someone is watching!",
+      "image": "/assets/images/dark_forest.png",
+      "music": "/assets/audio/forest night.wav",
+      "choices": [
+        { "text": "Run forward blindly", "next": "scene3c" },
+        { "text": "Hide behind thick trees", "next": "scene3d" }
+      ]
+    },
+    {
+      "id": "scene3a",
+      "text": "The river current is too strong! You struggle to stay afloat, but the water is winning.",
+      "image": "/assets/images/water_dark.png",
+      "music": "/assets/audio/water.mp3",
+      "choices": [
+        { "text": "Fight the current...", "next": "bad_end1" }
+      ]
+    },
+    {
+      "id": "scene3b",
+      "text": "Following the river, you discover a small wooden boat tied to a tree.",
+      "image": "/assets/images/boat.png",
+      "music": "/assets/audio/river flow.wav",
+      "choices": [
+        { "text": "Use the boat to cross", "next": "scene4a" },
+        { "text": "Ignore it and walk ahead", "next": "scene4b" }
+      ]
+    },
+    {
+      "id": "scene3c",
+      "text": "You trip over a root and fall! A dark shadow approaches you slowly.",
+      "image": "/assets/images/shadow.png",
+      "music": "/assets/audio/fail.wav",
+      "choices": [
+        { "text": "Accept your fate...", "next": "bad_end2" }
+      ]
+    },
+    {
+      "id": "scene3d",
+      "text": "You hold your breath. The footsteps pass by and fade away. You are safe... for now.",
+      "image": "/assets/images/forest_safe.png",
+      "music": "/assets/audio/forest night.wav",
+      "choices": [
+        { "text": "Move carefully forward", "next": "scene4c" }
+      ]
+    },
+    {
+      "id": "scene4a",
+      "text": "The boat safely takes you across. You see the warm lights of a village nearby.",
+      "image": "/assets/images/village.png",
+      "music": "/assets/audio/forest.mp3",
+      "choices": [
+        { "text": "Walk towards the lights", "next": "good_end" }
+      ]
+    },
+    {
+      "id": "scene4b",
+      "text": "Time is running out. You've been here before, going in circles. The sun is gone, and the nightmare of the night begins.",
+      "image": "/assets/images/night_forest.png",
+      "music": "/assets/audio/fail.wav",
+      "choices": [
+        { "text": "Wait for dawn...", "next": "bad_end3" }
+      ]
+    },
+    {
+      "id": "scene4c",
+      "text": "You find an old map carved into a tree trunk. It points to a hidden exit!",
+      "image": "/assets/images/treasure.png",
+      "music": "/assets/audio/treasure.wav",
+      "choices": [
+        { "text": "Follow the map's direction", "next": "good_end" }
+      ]
+    },
+    {
+      "id": "good_end",
+      "text": "VICTORY: The sun rises as you step out of the forest. You have survived the nightmare!",
+      "image": "/assets/images/sunrise.png",
+      "music": "/assets/audio/victory.wav",
+      "choices": []
+    },
+    {
+      "id": "bad_end1",
+      "text": "DIED: The river pulls you under. Darkness surrounds you. Everything goes quiet.",
+      "image": "/assets/images/water_dark.png",
+      "music": "/assets/audio/water.mp3",
+      "choices": []
+    },
+    {
+      "id": "bad_end2",
+      "text": "LOST: The shadow consumes you. You become a part of the forest's dark legends.",
+      "image": "/assets/images/shadow.png",
+      "music": "/assets/audio/fail.wav",
+      "choices": []
+    },
+    {
+      "id": "bad_end3",
+      "text": "FROZEN: The cold night air is too much. You close your eyes and fade away into the woods.",
+      "image": "/assets/images/night_forest.png",
+      "music": "/assets/audio/fail.wav",
+      "choices": []
+    }
+  ]
+}
